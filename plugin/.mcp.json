@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "stackwarden": {
+      "type": "http",
+      "url": "${STACKWARDEN_URL:-https://stackwarden.vercel.app}/api/mcp"
+    }
+  }
+}

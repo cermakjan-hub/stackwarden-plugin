@@ -1,0 +1,10 @@
+{
+  "name": "stackwarden",
+  "version": "0.2.1",
+  "description": "Scan a repo for the services it runs on and file them into Stackwarden, without code or secret values leaving your machine.",
+  "author": {
+    "name": "Stackwarden"
+  },
+  "homepage": "https://github.com/cermakjan-hub/stackwarden-plugin",
+  "license": "Apache-2.0"
+}
