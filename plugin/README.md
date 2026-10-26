@@ -28,7 +28,7 @@ The plugin connects to https://stackwarden.vercel.app. To use another Stackwarde
 ## Use
 
 - In a repo, say "I want to use Stackwarden", or run `/stackwarden:start`. Claude Code scans the repo, shows what it found, and files it once you confirm.
-- `/stackwarden:scan` scans the current repo again. Findings without strong evidence go to the review inbox in the app for you to accept or reject.
+- `/stackwarden:scan` scans the current repo again. Each new finding waits on the project's page in the app for you to approve or dismiss, with the Vercel project it is picked where Stackwarden can tell.
 - Ask "what does this project run on?" or "where is `STRIPE_SECRET_KEY` set?" to look it up in Stackwarden.
 
 The scan needs Node.js 22 or newer. While it runs, a hook blocks Claude Code from reading dotenv files, keys and other secret files, and lets the shell run only the scanner until Claude looks up the project. The hook refuses every tool call it guards if Node.js cannot start.

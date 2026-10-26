@@ -4,7 +4,7 @@
 
 Read this only when you need to check whether a service is already covered by the scanner rules, or which slug and kind to use for a finding.
 
-Strength: a config file, linked project ID or the repo remote is strong; a package together with one of its env var names is strong; any one other signal is medium; a finding only you made is weak and always goes to the review inbox.
+Strength: a config file, linked project ID or the repo remote is strong; a package together with one of its env var names is strong; any one other signal is medium; a finding only you made is weak and always waits for the user's approval.
 
 | Service | Slug | Kind | Signals |
 | --- | --- | --- | --- |

@@ -1,6 +1,6 @@
 {
   "name": "stackwarden",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Scan a repo for the services it runs on and file them into Stackwarden, without code or secret values leaving your machine.",
   "author": {
     "name": "Stackwarden"

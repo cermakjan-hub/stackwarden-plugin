@@ -52,7 +52,7 @@ The scanner reads dependencies, config files, env var names, containers, CI work
 - Scheduled jobs (`cron`, `schedule`, job runners) and what they call.
 - Env var names from the report's `envVars` that no finding owns, which often belong to a service.
 
-Keep it short: a few targeted Grep calls with a `glob`, and Read only the files those point to. Each extra finding needs a real file and line. Add it with `source: "ai"`, `strength: "weak"`, and evidence `{"signal": "ai_review", "path": "<file>", "line": <n>, "detail": "<what you saw, under 200 characters, no values>"}`. Use a lowercase slug for `service` (see `detection.md` for known slugs and kinds; read it only if you need it). Findings you make always go to the user's review inbox.
+Keep it short: a few targeted Grep calls with a `glob`, and Read only the files those point to. Each extra finding needs a real file and line. Add it with `source: "ai"`, `strength: "weak"`, and evidence `{"signal": "ai_review", "path": "<file>", "line": <n>, "detail": "<what you saw, under 200 characters, no values>"}`. Use a lowercase slug for `service` (see `detection.md` for known slugs and kinds; read it only if you need it). Findings you make always wait for the user's approval on the project page.
 
 ### 3. Find the project
 
@@ -72,10 +72,10 @@ Stackwarden scan of <repo name> → <project name> (new | existing)
   Supabase       database   strong   supabase/config.toml, package.json:5
                  keys: SUPABASE_SERVICE_ROLE_KEY (src/lib/db.ts:3)
   Stripe         payments   strong   package.json:8, STRIPE_SECRET_KEY
-  Sentry         monitoring medium   package.json:9                → review inbox
-  Acme webhooks  other      found by Claude  src/hooks.ts:12       → review inbox
+  Sentry         monitoring medium   package.json:9
+  Acme webhooks  other      found by Claude  src/hooks.ts:12
 
-Strong findings are added to the project; the others wait in the review inbox.
+Each one waits for your approval on the project page, with the Vercel project it is picked where Stackwarden can tell.
 Send this to Stackwarden? (yes / edit / cancel)
 ```
 
@@ -92,7 +92,7 @@ Call `submit_scan` once, with:
 
 ### 6. Report what happened
 
-Print what Stackwarden says it did: what was added, updated or sent to the review inbox, anything no longer seen, and the links to the project and the inbox.
+Print what Stackwarden says it did: what was updated, what waits for the user to approve, anything no longer seen, and the link to the project, where the user approves or dismisses each one.
 
 ## When something goes wrong
 

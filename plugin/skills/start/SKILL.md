@@ -25,6 +25,6 @@ Use the Skill tool to run `stackwarden:scan`, and follow it to the end. It finds
 
 Call `get_stack` with the project ID the scan reported. Then tell the user, in a few short lines:
 
-- The project's link, and how many items wait in the review inbox, which they accept or reject in the app.
+- The project's link, and how many services wait for their approval, which they approve or dismiss on the project's page.
 - For each provider in `toConnect`: connecting it imports its projects and usage, with the link to connect it. They create the token at the provider and paste it into Stackwarden. Never ask for a token or key here.
-- From now on, in this repo, Claude Code says at the start of a session when the code has changed since the scan, and records the services it sets up, so they land in the review inbox.
+- From now on, in this repo, Claude Code says at the start of a session when the code has changed since the scan, and records the services it sets up, so they wait for approval on the project's page.
