@@ -33,6 +33,7 @@ Strength: a config file, linked project ID or the repo remote is strong; a packa
 | Twilio | `twilio` | other | npm: `twilio`; pypi: `twilio`; `TWILIO_*` |
 | OpenAI | `openai` | ai | npm: `openai`, `@ai-sdk/openai`; pypi: `openai`; `OPENAI_API_KEY`; `OPENAI_*`; host `api.openai.com` |
 | Anthropic | `anthropic` | ai | npm: `@anthropic-ai/sdk`, `@ai-sdk/anthropic`; pypi: `anthropic`; `ANTHROPIC_API_KEY`; `ANTHROPIC_*`; host `api.anthropic.com` |
+| E2B | `e2b` | hosting | npm: `e2b`; pypi: `e2b`, `e2b-code-interpreter`, `e2b-desktop`; npm: `@e2b/*`; `e2b.toml`; `e2b.Dockerfile`; `E2B_API_KEY`; `E2B_*`; host `api.e2b.app`; host `api.e2b.dev` |
 | Airtable | `airtable` | database | npm: `airtable`; pypi: `pyairtable`; `AIRTABLE_*`; host `api.airtable.com` |
 | Clerk | `clerk` | auth | npm: `@clerk/*`; `CLERK_*`; `NEXT_PUBLIC_CLERK_*` |
 | Auth0 | `auth0` | auth | npm: `@auth0/*`; `AUTH0_*` |
