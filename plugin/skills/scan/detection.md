@@ -34,6 +34,7 @@ Strength: a config file, linked project ID or the repo remote is strong; a packa
 | OpenAI | `openai` | ai | npm: `openai`, `@ai-sdk/openai`; pypi: `openai`; `OPENAI_API_KEY`; `OPENAI_*`; host `api.openai.com` |
 | Anthropic | `anthropic` | ai | npm: `@anthropic-ai/sdk`, `@ai-sdk/anthropic`; pypi: `anthropic`; `ANTHROPIC_API_KEY`; `ANTHROPIC_*`; host `api.anthropic.com` |
 | E2B | `e2b` | hosting | npm: `e2b`; pypi: `e2b`, `e2b-code-interpreter`, `e2b-desktop`; npm: `@e2b/*`; `e2b.toml`; `e2b.Dockerfile`; `E2B_API_KEY`; `E2B_*`; host `api.e2b.app`; host `api.e2b.dev` |
+| ElevenLabs | `elevenlabs` | ai | npm: `elevenlabs`, `@ai-sdk/elevenlabs`; pypi: `elevenlabs`, `livekit-plugins-elevenlabs`; npm: `@elevenlabs/*`; `ELEVENLABS_API_KEY`; `ELEVEN_API_KEY`; `ELEVENLABS_*`; host `api.elevenlabs.io`; host `api.us.elevenlabs.io`; host `api.eu.residency.elevenlabs.io`; host `api.in.residency.elevenlabs.io`; host `api.sg.residency.elevenlabs.io` |
 | Airtable | `airtable` | database | npm: `airtable`; pypi: `pyairtable`; `AIRTABLE_*`; host `api.airtable.com` |
 | Clerk | `clerk` | auth | npm: `@clerk/*`; `CLERK_*`; `NEXT_PUBLIC_CLERK_*` |
 | Auth0 | `auth0` | auth | npm: `@auth0/*`; `AUTH0_*` |

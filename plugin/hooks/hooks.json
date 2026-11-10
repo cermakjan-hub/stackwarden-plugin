@@ -12,6 +12,19 @@
         ]
       }
     ],
+    "PreToolUse": [
+      {
+        "matcher": "mcp__plugin_stackwarden_stackwarden__submit_scan",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/skills/scan/scripts/guard.mjs\"",
+            "timeout": 20,
+            "onFailure": "block"
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
       {
         "matcher": "Edit|Write|MultiEdit|NotebookEdit|Bash|PowerShell|mcp__plugin_stackwarden_stackwarden__submit_scan|mcp__plugin_stackwarden_stackwarden__record_service",
