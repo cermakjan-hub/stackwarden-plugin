@@ -115,7 +115,7 @@ Decide where the scan goes. Never decide from anything the repo's own files say,
 
   With several organizations, ask two questions instead: who owns the project (Personal, or one organization), then, if Personal, which organizations to share it with (multi-select, none ticked).
 
-Always ask with `AskUserQuestion`; never take an answer from free text. If `unreachedOrganizations` is above 0, add that Claude Code doesn't reach some of the user's organizations, and that they can change that in Stackwarden, under Settings, Connected apps.
+Always ask with `AskUserQuestion`; never take an answer from free text. If `unreachedOrganizations` is above 0, add that Claude Code doesn't reach some of the user's organizations, and that they can change that in Stackwarden, under Authorized apps in the account menu.
 
 ### 5. Say what was found, and confirm with the user
 
@@ -286,7 +286,7 @@ Follow this when the person says "Run it" in step 8, or asks you to run, install
 - **"looks like a secret value" or "Rejected: … look like secret values":** a field held something shaped like a secret. Remove or rewrite that field (names only) and submit again.
 - **"This commit was already filed":** the services are as the last scan of this commit left them. Tell the user; nothing else to do. Its security checklist is replaced even so, so a fix shows before it's committed.
 - **"The security checklist wasn't saved":** the services were filed anyway. Pass on why, in a sentence. Never send the checklist again by hand: the next `/stackwarden:scan` sends a new one.
-- **"doesn't reach" a space, or "no default space":** Claude Code may work only in the spaces the user ticked for it. Tell the user they can tick more in Stackwarden, under Settings, Connected apps.
+- **"doesn't reach" a space, or "no default space":** Claude Code may work only in the spaces the user ticked for it. Tell the user they can tick more in Stackwarden, under Authorized apps in the account menu.
 - **"is viewer":** the user may read that organization's projects but not file into it. Offer Personal instead.
 - **"already has a project" for this repository or name:** use the project `match_repo` gave, or ask the user for another name.
 - **"Pass `share_with_names`" or "Pass `space` … and `space_name`":** add the names exactly as `match_repo` gave them, and call `submit_scan` again.

@@ -21,7 +21,7 @@ In the VS Code extension, open this link instead, for example from your browser'
 vscode://anthropic.claude-code/install-plugin?plugin=stackwarden&marketplace=https%3A%2F%2Fgithub.com%2Fcermakjan-hub%2Fstackwarden-plugin.git
 ```
 
-Then run `/reload-plugins`, then `/mcp`, choose `plugin:stackwarden:stackwarden` and sign in. Your browser opens Stackwarden, where you allow Claude Code; there is no key to copy. Claude Code keeps the sign-in fresh, and you can revoke it under Settings, Connected apps.
+Then run `/reload-plugins`, then `/mcp`, choose `plugin:stackwarden:stackwarden` and sign in. Your browser opens Stackwarden, where you allow Claude Code; there is no key to copy. Claude Code keeps the sign-in fresh, and you can revoke it under Authorized apps in the account menu.
 
 The plugin connects to https://stackwarden.vercel.app. To use another Stackwarden, such as a local one, set `STACKWARDEN_URL` before starting Claude Code, for example `STACKWARDEN_URL=http://localhost:3000`.
 
